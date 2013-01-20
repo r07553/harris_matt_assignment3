@@ -1,4 +1,5 @@
 harris_matt_assignment3
 =======================
-
-SDI Project 3
+Matt Harris
+SDI 1301 Project 3
+mattharris@fullsail.edu
