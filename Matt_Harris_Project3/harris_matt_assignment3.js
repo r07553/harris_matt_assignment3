@@ -12,6 +12,7 @@ var myName = "Matt";
 var myFavGames = ["Black Ops II", " Far Cry 3", " Borderlands 2", " Zelda Skyward Sword"];
 var myConsoles = 3;
 var freeTime = true;
+var minutesPerGame = [54, 65, 13, 40]
 
 console.log("Hello my name is " + myName + ", it is " + freeTime + " that I like to play games in my free time.");
 console.log("My favorite games are; " + myFavGames + ".");
@@ -100,6 +101,28 @@ var whatToPlay= {
 var decision = whatToPlay.consoleToPlay("Xbox", "PS3");
 console.log(decision);
 console.log("I will play Xbox first then I will play PS3.");
+
+// Array Function
+var havingFun = {
+	playingSomeGames: function(games, time){
+	for (var gameNumber = 0; gameNumber < games.length; gameNumber++){
+		var iPlayed = games; 
+		var gameName = games[gameNumber],
+			minutesThisGame = time[gameNumber];
+		console.log("Starting to play " + gameName + " for " + minutesThisGame + " minutes.");
+		for (var minutes = 0; minutes < minutesThisGame; minutes+= 5) {
+		var minutesLeft = minutesThisGame - minutes;
+		console.log(minutes + " played, " + minutesLeft + " left.");
+	}
+		console.log("I am bored with " + gameName + ".");
+		return iPlayed;
+	
+}
+}
+};
+
+var hadFun = havingFun.playingSomeGames(myFavGames, minutesPerGame);
+console.log("I played " + hadFun + " until I got bored.");
 
 
 
