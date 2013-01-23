@@ -9,9 +9,13 @@
 
 // Global Variables
 var myName = "Matt";
-var myFavGames = ["Black Ops II", "Far Cry 3", "Borderlands 2", "Zelda Skyward Sword"];
+var myFavGames = ["Black Ops II", " Far Cry 3", " Borderlands 2", " Zelda Skyward Sword"];
 var myConsoles = 3;
 var freeTime = true;
+
+console.log("Hello my name is " + myName + ", it is " + freeTime + " that I like to play games in my free time.");
+console.log("My favorite games are; " + myFavGames + ".");
+console.log("I have " + myConsoles + " game consoles.");
 
 // JSON Data
 var iPlay = {
@@ -52,7 +56,7 @@ var playTime = {
 		
 };
 
-playTime.hoursToPlay(4)
+playTime.hoursToPlay(5)
 
 
 
