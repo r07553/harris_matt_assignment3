@@ -58,6 +58,23 @@ var playTime = {
 
 playTime.hoursToPlay(5)
 
+//Boolean Function
+console.log("Before I start playing games I want to get something to eat.");
+
+var iEat = { 
+	myMeal: function(slicesOfPizza, pop){
+	if(slicesOfPizza + pop > 0) {
+		var full = true
+		return full; 
+	} else {
+		var hungry = false
+		return hungry;
+	}
+}
+};
+
+
+console.log("It is " + iEat.myMeal(4,1) + " that I eat pizza and drink pop, then I have to clean up the dishes!");
 
 
 
