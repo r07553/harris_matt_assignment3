@@ -2,7 +2,7 @@
 // Matt Harris
 // SDI 1301
 // Project 3
-// 1/20/2013
+// 1/23/2013
 // More Video Games
 
 // Start
@@ -124,7 +124,7 @@ var havingFun = {
 var hadFun = havingFun.playingSomeGames(myFavGames, minutesPerGame);
 console.log("I played " + hadFun + " until I got bored.");
 
-
+// Method Mutator
 
 
 
