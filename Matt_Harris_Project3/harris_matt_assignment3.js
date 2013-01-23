@@ -73,7 +73,7 @@ var iEat = {
 
 console.log("It is " + iEat.myMeal(4,1) + " that I eat pizza and drink pop, then I have to clean up the dishes!");
 
-// Number Function
+// Number Function With Accessor 
 var chores = {
     cleanup: function(dishes){
 	while (dishes < 4) {
@@ -87,7 +87,19 @@ var chores = {
 
 console.log(chores.cleanup(0) + " dishes cleaned. Now to start playing video games!");
 
+// String Function
 
+var whatToPlay= {
+	consoleToPlay: function(thisConsole, thatConsole){
+	var microsoft = (" is fun to play with my friends.");
+	var sony = (" has great graphics.")
+	return thisConsole + microsoft + " but " + thatConsole + sony;
+}
+};
+
+var decision = whatToPlay.consoleToPlay("Xbox", "PS3");
+console.log(decision);
+console.log("I will play Xbox first then I will play PS3.");
 
 
 
