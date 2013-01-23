@@ -39,10 +39,7 @@ var iPlay = {
 	}
 };
 
-for (var key in iPlay.myGames) {
-	var game = iPlay.myGames[key]
-	game.name
-};
+console.log( iPlay.myGames );
 
 // Method Procedure
 var playTime = {
@@ -70,12 +67,25 @@ var iEat = {
 		var hungry = false
 		return hungry;
 	}
-}
+	}
 };
 
 
 console.log("It is " + iEat.myMeal(4,1) + " that I eat pizza and drink pop, then I have to clean up the dishes!");
 
+// Number Function
+var chores = {
+    cleanup: function(dishes){
+	while (dishes < 4) {
+		console.log(dishes + " dishes cleaned.");
+		dishes = dishes + 1;
+	}
+	return dishes;
+	}
+};
+
+
+console.log(chores.cleanup(0) + " dishes cleaned. Now to start playing video games!");
 
 
 
