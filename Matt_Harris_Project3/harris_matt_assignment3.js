@@ -2,7 +2,7 @@
 // Matt Harris
 // SDI 1301
 // Project 3
-// 1/23/2013
+// 1/24/2013
 // More Video Games
 
 // Start
@@ -94,13 +94,13 @@ var whatToPlay= {
 	consoleToPlay: function(thisConsole, thatConsole){
 	var microsoft = (" is fun to play with my friends.");
 	var sony = (" has great graphics.")
-	return thisConsole + microsoft + " but " + thatConsole + sony;
-}
+	return thisConsole + microsoft + " But " + thatConsole + sony;
+	}
 };
 
 var decision = whatToPlay.consoleToPlay("Xbox", "PS3");
 console.log(decision);
-console.log("I will play Xbox first then I will play PS3.");
+console.log("I will play Xbox first then I will play PS3, and Maybe some Wii.");
 
 // Array Function
 var havingFun = {
@@ -117,20 +117,45 @@ var havingFun = {
 		console.log("I am bored with " + gameName + ".");
 		return iPlayed;
 	
-}
-}
+		}
+		}
 };
 
 var hadFun = havingFun.playingSomeGames(myFavGames, minutesPerGame);
 console.log("I played " + hadFun + " until I got bored.");
 
-// Method Mutator
+// Method With Accessor and Mutator
 
+var timePlayed = {
 
+	"Xbox": 119,
+	"PS3": 13,
+	"Wii": 40,
+	"playTime": function() {
+		var totalPlayTime = this.Xbox + this.PS3 + this.Wii;
+		var convertToHours = totalPlayTime / 60;
+		return convertToHours;
+	},
+	"changeTime": function(playMore){
+		this.Xbox = playMore;
+	}
+	 
+};
 
+console.log("I have played Xbox for " + timePlayed.Xbox + " minutes.");
+console.log("I have played PS3 for " + timePlayed.PS3 + " minutes.");
+console.log("I have played Wii for " + timePlayed.Wii + " minutes.");
+console.log("This is only a total of " + timePlayed.playTime() + " hours.");
+console.log("I think I will play more Xbox.");
 
+timePlayed.changeTime(185); 
 
+console.log("I have now played for " + timePlayed.playTime() + " hours.");
 
+//Ending to the story
+console.log("I think that is enough game playing for today. Time to start coding my homework!");
+
+//Finish
 
 
 
